@@ -1,0 +1,28 @@
+<ion-content
+  [style]="gradient"
+  (click)="knock()">
+
+  <div
+    *ngIf="isAuthenticated; else signInBtn"
+    class="user-info">
+    <div class="user-avatar-wrapper">
+      <div
+        [style]="getAvatarUrl()"
+        class="user-avatar">
+      </div>
+    </div>
+    <h2 class="app-greeting">Welcome <span class="user-name">{{ profile.name }}</span>!</h2>
+    <p class="app-hint">Tap on screen to knock-knock</p>
+  </div>
+
+  <ng-template #signInBtn>
+    <button
+      (click)="signIn()"
+      ion-button
+      class="sign-in-btn"
+      color="primary">
+      Sign in to&nbsp;<ion-icon name="logo-slack"></ion-icon>
+    </button>
+  </ng-template>
+
+</ion-content>

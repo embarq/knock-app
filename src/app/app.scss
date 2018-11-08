@@ -1,0 +1,80 @@
+.knock-loading {
+  padding-bottom: 1rem;
+  align-items: flex-end;
+
+  .loading-wrapper {
+      color: #fff;
+      background: rgba(0,0,0,0.2);
+      box-shadow: 0 4px 1rem rgba(0,0,0,0.15);
+      border-radius: 1rem;
+  }
+}
+
+.knock-toast {
+  .toast-wrapper {
+      margin-top: 1rem;
+      width: 70%;
+      border-radius: 1rem;
+      background: rgba(0,0,0,0.2);
+
+      .toast-message {
+          text-align: center;
+      }
+  }
+}
+
+ion-content {
+  --background: transparent;
+  background-image: none;
+  transition: background-image 200ms;
+}
+
+.sign-in-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: none;
+  background-color: rgba(0,0,0,0.2)
+}
+
+.slack-logo {
+  width: 35px;
+  height: 100%;
+  background-image: url("https://cdn.brandfolder.io/5H442O3W/as/h061r68y/Slack_MarkWhiteWeb.png");
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.user-info {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  width: 70%;
+  padding: 1rem;
+  transform: translateY(-50%);
+  text-align: center;
+  background-color: rgba(0,0,0,0.15);
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.user-avatar {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+
+  background-image: var(--avatar-url);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  box-shadow: 0 4px 1rem rgba(0,0,0,0.15);
+
+  border-radius: 50%;
+}
+
+.app-hint {
+  opacity: 0.7;
+}

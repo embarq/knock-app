@@ -1,0 +1,7 @@
+{
+  "name": "knock",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
